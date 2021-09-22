@@ -1,0 +1,17 @@
+class ins:
+    def __init__(self, Name, USN):
+        self.Name = Name
+        self.USN = USN
+
+class students(ins):
+    def __init__(self, Name, USN, Sem, institute):
+        self.Sem = Sem
+        self.institute = institute
+        ins.__init__(self, Name , USN)
+
+    def dispalay(self):
+        print("name of students is :{} and USN is {}\nand he is in {}sem students Now he is in {} institute".format(self.Name, self.USN,self.Sem , self.institute ))
+
+# Ashok = ins("Ashok" ,"Yes")      
+Ashok = students("Ashok" , 78 , 3 , "IIIT DHARWAD")
+Ashok.dispalay()
