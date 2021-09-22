@@ -1,0 +1,15 @@
+class faculty:
+    def __init__(self, Name, Emp_ID, Branch, Salary):
+        self.Name = Name
+        self.Emp_ID = Emp_ID
+        self.Branch = Branch
+        self.Salary = Salary
+
+    def print_details(self):
+        print("Name of faculty teacher is {}".format(self.Name))
+        print("ID of faculty teacher is {}".format(self.Emp_ID))    
+        print("Branch of faculty teacher is {}".format(self.Branch))    
+        print("Salary of faculty teacher is {}".format(self.Salary))    
+
+Ramesh = faculty("Ramesh", 3, "CSC", 250000)
+Ramesh.print_details()
