@@ -1,0 +1,20 @@
+import math as math
+class circle:
+    def __init__(self , radius):
+        self.radius = radius
+
+    def rearea(self):
+        area =  (math.pi)*(self.radius*self.radius)  
+        print(area)
+
+    def reparimeter(self):
+        parimeter = 2*(math.pi)*(self.radius)  
+        print(parimeter)  
+
+unit = circle(3)        
+unit.rearea()
+unit.reparimeter()
+
+unit = circle(4)
+unit.rearea()
+unit.reparimeter()
