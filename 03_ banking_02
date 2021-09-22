@@ -1,0 +1,33 @@
+class members:
+    def __init__(self, Account_No, Account_holder_name, Amount):
+        self.Account_holder_name = Account_holder_name
+        self.Account_No = Account_No
+        self.Amount = Amount
+                  
+    def Deposit(self):
+        print("sir/madam " + self.Account_holder_name + "how many Ruppes you want to add ")
+        num = (float)(input()) 
+        self.Amount += num 
+
+    def withdraw(self):
+        print("sir/madam " + self.Account_holder_name + " how many Ruppes you want to withdraw ")
+        num = (float)(input())    
+        if(num<self.Amount):
+            print("Now in your account {} Ruppes are remaning ".format(self.Amount-num))
+            self.Amount = self.Amount - num
+        else:
+            print("In Your Account not a Sufficient balance..")    
+
+    def check_balance(self):
+        print("Your available balance is {}".format(self.Amount))
+
+    def display_account_details(self):
+        print("Your Name is {}".format(self.Account_holder_name))        
+        print("Your Account_No is {}".format(self.Account_No))
+        print("Your available balance is {}".format(self.Amount))
+        
+Ramesh = members(2453, "Ramesh", 40000)            
+Ramesh.withdraw()
+Ramesh.Deposit()
+Ramesh.check_balance()
+Ramesh.display_account_details()
