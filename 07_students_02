@@ -1,0 +1,17 @@
+class studentss:
+    def __init__(self , Name1 , Roll_no1 , age1 , Name2 , Roll_no2 , age2):
+        self.Name1 = Name1
+        self.Roll_no1 = Roll_no1
+        self.age1 = age1
+        self.Name2 = Name2
+        self.Roll_no2 = Roll_no2
+        self.age2 = age2
+
+    def check(self):
+        if self.age1 != self.age2:
+            print("Age are not equal")
+        else:
+            print("Age are Equal")
+
+Naresh = studentss("Naresh" , 87 , 21 , "Rohit", 74, 22)
+Naresh.check()
