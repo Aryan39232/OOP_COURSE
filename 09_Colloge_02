@@ -1,0 +1,19 @@
+class students:
+    def __init__(self , Name, Roll_no, Sem):
+        self.Name = Name
+        self.Roll_no = Roll_no
+        self.Sem = Sem
+
+class laptop(students):
+    def __init__(self,Name, Roll_no, Sem, Ram , hard_dick ):
+        self.Ram = Ram
+        self.hard_dick = hard_dick
+
+        students.__init__(self , Name, Roll_no, Sem)
+
+    def display(self):
+        print("name of students is :{} and Roll_no is {} and he is in {}sem students".format(self.Name, self.Roll_no,self.Sem))
+        print("Laptop Ram : {} and hard_dick :{}".format(self.Ram , self.hard_dick))
+
+Ramesh = laptop("Ramesh" , 43 , 3 , "8G.B" , 256)            
+Ramesh.display()
