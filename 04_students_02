@@ -1,0 +1,17 @@
+class students:
+    def __init__(self , Name , USN ):
+        self.Name = Name
+        self.USN =  USN
+        self.marks = []
+    
+    def Add_marks(self):
+        for i in range(3):
+            m = int(input("Enter the marks of %s in %d subject is "%(self.Name ,i+1)))
+            self.marks.append(m)
+
+    def display(self):
+        print("Name of the students is {}\nphysics marks is :{}".format(self.Name,self.marks))
+        
+Vivek = students("Vivek", 43)        
+Vivek.Add_marks()
+Vivek.display()
